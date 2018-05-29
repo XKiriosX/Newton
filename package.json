@@ -1,0 +1,23 @@
+{
+  "name": "newton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "spline.js",
+  "dependencies": {
+    "cubic-spline": "^1.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XKiriosX/Newton.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XKiriosX/Newton/issues"
+  },
+  "homepage": "https://github.com/XKiriosX/Newton#readme"
+}

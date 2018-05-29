@@ -45,7 +45,6 @@ function interpolate(x, f)
 	};
 	var result = document.querySelector('#result');
 	result.innerHTML = '<div>'+pstr + '</div><br /><div>' + multiStr.join('').replace(/([\-\+])/g,' $1 ') + '</div>';
-	console.log(multiStr);
 	comparision();
 }
 function Poly(coeff)

@@ -55,7 +55,7 @@ legend
 </head>
 <body>
 <div class="main">
-	<h2>Newton polynomial</h2>
+	<h2>Lab#2</h2>
 	<form>
 		<fieldset> 
 			<legend>Comma separated values</legend>
@@ -66,25 +66,36 @@ legend
 			</ul>
 		</fieldset>
 		<fieldset>
-			<legend>Result</legend>
+			<legend>Newton polynomial result</legend>
 			<div id="result">
 
 			</div>
 		</fieldset>
 		<fieldset>
-			<legend>Roots comparision</legend>
+			<legend>Newton comparision</legend>
 			<div class="roots"></div>
+		</fieldset>
+		<fieldset>
+			<legend>Spline comparision</legend>
+			<div class="spline-roots"></div>
+		</fieldset>
+		<fieldset>
+			<legend>Best approximation polynomial</legend>
+			<div class="bap"></div>
 		</fieldset>
 	</form>
 </div>
+<script src="best-ap.js"></script>
+<script src="spline.js"></script>
 <script>
 var form = document.querySelector('form');
 form.addEventListener('submit', function(evt)
-{ 
-	interpolate(document.querySelector('#x-series').value.split(','), document.querySelector('#y-series').value.split(','));
-	evt.preventDefault();
+{
+    interpolate(document.querySelector('#x-series').value.split(','), document.querySelector('#y-series').value.split(','));
+    init(document.querySelector('#x-series').value.split(','), document.querySelector('#y-series').value.split(','));
+		best_ap();
+    evt.preventDefault();
 }, false);
-
 </script>
 </body>
 </html>
